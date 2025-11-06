@@ -39,7 +39,7 @@ so that the fuzz target is executed by OSS-Fuzz.
 
 ## Local development
 
-To do local development with OSS-Fuzz you need to fork and clone the
+To do develop locally with OSS-Fuzz you need to fork and clone the
 following repositories:
 
 * https://github.com/google/oss-fuzz
@@ -49,17 +49,15 @@ following repositories:
 After cloning forks of these repositories, move into the `oss-fuzz`
 repository and run the following to build the base and fuzzer image:
 
-```terminal
-$ python infra/helper.py build_image python3-libraries
-$ python infra/helper.py build_fuzzers python3-libraries
-```
+```sh
+python infra/helper.py build_image python3-libraries
+python infra/helper.py build_fuzzers python3-libraries
 
 Once this succeeds you have the proper toolset to locally develop fuzzers.
 You can run fuzz targets using the same helper script:
 
-```terminal
-$ python infra/helper.py run_fuzzer python3-libraries fuzzer-email
-```
+```sh
+python infra/helper.py run_fuzzer python3-libraries fuzzer-email
 
 This will run the fuzzer indefinitely, so stop the fuzzer whenever
 you've confirmed that it works.
