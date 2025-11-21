@@ -1,5 +1,9 @@
 # Python Library Fuzzers
 
+
+> [!IMPORTANT]  
+> This repo has moved to [https://github.com/python/library-fuzzers](python/library-fuzzers)
+
 This repository contains the fuzzer definitions, seed corpora,
 and dictionaries used by [OSS-Fuzz](https://github.com/google/oss-fuzz) to fuzz-test Python standard library modules.
 
